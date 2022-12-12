@@ -1,0 +1,202 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"  href="adobo.jpg">
+  <title> Survey Form </title>
+  <!--
+  GROUP #
+  - BELLO, BILLY JAY
+  - ORENDAIN, REYMARK
+  - BALANDRA,ALVIN JAMES
+  - PILAPIL,JERMAIN
+  - NICDAO, PENNY
+  (CREATED BY ORENDAIN, REYMARK) 
+  -->  
+
+  <style>
+
+    /* Styling the Body element i.e. Color,
+    Font, Alignment */
+    body {
+      background-color: Tomato;
+      font-family: Verdana;
+      text-align: center;
+      height: 100vh;
+      width: 100%;
+      background-image: url(or.jpg);
+      background-size: full;
+      background-position: center;
+    
+
+    }
+
+    /* Styling the Form (Color, Padding, Shadow) */
+    form {
+      background-color: beige;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styling form-control Class */
+    .form-control {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    /* Styling form-control Label */
+    .form-control label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Styling form-control input,
+    select, textarea */
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+    }
+
+    /* Styling form-control Radio
+    button and Checkbox */
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+
+    /* Styling Button */
+    button {
+      background-color: MediumSeaGreen;
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      font-size: 21px;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Sample Survey Form</h1>
+
+  <!-- Create Form -->
+  <form id="form">
+
+    <!-- Details -->
+    <div class="form-control">
+      <label for="What means a software?" id="label-What are the characteristics of software?">
+        What means a software?
+      </label>
+
+      <!-- Input Type Text -->
+      <input type="text" id="What means a software? " placeholder="What means a software? ">
+    </div><div class="form-control">
+      <label for="email" id="label-email">
+        What are the types of software?
+      </label>
+
+      <!-- Input Type Email-->
+      <input type="email" id="email" placeholder="What are the types of software?">
+    </div>
+
+    <div class="form-control">
+      <label for="What are some examples of computer programs?" id="label-age">
+        What are some examples of computer programs?
+      </label>
+
+      <!-- Input Type Text -->
+      <input type="text" id="What are some examples of computer programs?" placeholder="Answer.">
+    </div>
+
+    <div class="form-control">
+      <label for="role" id="label-role">
+        When it comes to using your software what is your major experience
+      </label>
+      
+      <!-- Dropdown options -->
+      <select name="role" id="role">
+        <option value="My Experience">My Experience</option>
+        <option value="Difficult">Difficult</option>
+        <option value="Intermediate">
+          Intermediate
+        </option>
+        <option value="Maybe">Maybe</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label>
+        Is freeCodeCamp Good for Software Engineers?
+      </label>
+
+      <!-- Input Type Radio Button -->
+      <label for="recommed-1">
+        <input type="radio" id="recommed-1" name="recommed">GOOD😁
+      </label>
+      <label for="recommed-2">
+        <input type="radio" id="recommed-2" name="recommed">BAD🗿
+      </label>
+      <label for="recommed-3">
+        <input type="radio" id="recommed-3" name="recommed">MAYBE😅
+      </label>
+    </div>
+
+    <div class="form-control">
+      <label>10 Computer Software
+        <small>(Click all that apply)</small>
+      </label>
+      <!-- Input Type Checkbox -->
+      <label for="inp-1">
+        <input type="checkbox" name="inp">Application software</label>
+      <label for="inp-2">
+        <input type="checkbox" name="inp">System software</label>
+      <label for="inp-3">
+        <input type="checkbox" name="inp">Middleware</label>
+      <label for="inp-4">
+        <input type="checkbox" name="inp">Driver software</label>
+      <label for="inp-5">
+        <input type="checkbox" name="inp">Programming software</label>
+      <label for="inp-6">
+        <input type="checkbox" name="inp">Freeware</label>
+      <label for="inp-7">
+        <input type="checkbox" name="inp">Open source software</label>
+      <label for="inp-7">
+        <input type="checkbox" name="inp">Proprietary software or closed software</label>
+      <label for="inp-7">
+        <input type="checkbox" name="inp">Shareware</label>
+      <label for="inp-7">
+        <input type="checkbox" name="inp">Utility software</label>
+    </div>
+
+    <div class="form-control">
+      <label for="comment">
+        Any question or suggestions
+      </label>
+
+      <!-- multi-line text input control -->
+      <textarea name="comment" id="comment" placeholder="Enter your comment here">      </textarea>
+    </div>
+
+    <!-- Multi-line Text Input Control -->
+    <button type="submit" value="submit">
+      Submit
+    </button>
+  </form>
+
+
+</body></html>
